@@ -1,0 +1,25 @@
+# CMP4501 - Autonomous Driving with Highway-Env
+# Install with:
+#   pip install -r requirements.txt
+
+# Core RL environment
+highway-env>=1.8.2
+gymnasium>=0.29.0
+
+# Reinforcement learning and neural network backend
+stable-baselines3>=2.3.0
+torch>=2.2.0
+
+# Numerical computation
+numpy>=1.26.0
+
+# Plot generation
+matplotlib>=3.8.0
+
+# Video and GIF generation
+imageio>=2.34.0
+imageio-ffmpeg>=0.4.9
+Pillow>=10.0.0
+
+# Stable-Baselines3 TensorBoard logging
+tensorboard>=2.16.0
