@@ -1,4 +1,4 @@
-<div align="center">
+#<div align="center">
 
 # Autonomous Driving with Reinforcement Learning
 
@@ -6,7 +6,7 @@
 
 **Selected Track: Option A - Autonomous Driving with Highway-Env**
 
-**Kerim Elmali - 2282509**<br>
+**Kerim Elmalı - 2282509**<br>
 **Mohammad Siyam - 2267953**<br>
 **Abdalla Hamuda - 2105020**
 
@@ -587,6 +587,6 @@ learning-progress claim, while its safety limitation remains explicit.
 
 *CMP4501 Applied Reinforcement Learning*<br>
 *Department of Software Engineering - Bahçeşehir University (BAU)*<br>
-*Kerim Elmali - 2282509 | Mohammad Siyam - 2267953 | Abdalla Hamuda - 2105020*
+*Kerim Elmalı - 2282509 | Mohammad Siyam - 2267953 | Abdalla Hamuda - 2105020*
 
 </div>
