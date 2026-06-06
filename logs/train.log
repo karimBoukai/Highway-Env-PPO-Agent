@@ -1,0 +1,21 @@
+2026-06-05 11:02:27 | INFO     | __main__ | Training run started: ppo_highway_20260605_110227
+2026-06-05 11:02:27 | INFO     | utils | Global seed set to 42.
+2026-06-05 11:02:30 | INFO     | utils | Checkpoint saved: C:\Users\Karee\OneDrive\Desktop\RL\checkpoints\ppo_highway_20260605_110227_step_0.zip
+2026-06-05 11:03:30 | INFO     | utils | Checkpoint saved: C:\Users\Karee\OneDrive\Desktop\RL\checkpoints\ppo_highway_20260605_110227_step_1024.zip
+2026-06-05 11:04:30 | INFO     | utils | Checkpoint saved: C:\Users\Karee\OneDrive\Desktop\RL\checkpoints\ppo_highway_20260605_110227_step_2048.zip
+2026-06-05 11:04:30 | INFO     | __main__ | Run ppo_highway_20260605_110227 complete. Elapsed: 119.8s. Final model: C:\Users\Karee\OneDrive\Desktop\RL\checkpoints\ppo_highway_20260605_110227_step_2048.zip
+2026-06-05 11:06:09 | INFO     | __main__ | Training run started: ppo_highway_20260605_110609
+2026-06-05 11:06:09 | INFO     | utils | Global seed set to 42.
+2026-06-05 11:06:12 | INFO     | utils | Checkpoint saved: C:\Users\Karee\OneDrive\Desktop\RL\checkpoints\ppo_highway_20260605_110609_step_0.zip
+2026-06-05 11:06:44 | INFO     | utils | Checkpoint saved: C:\Users\Karee\OneDrive\Desktop\RL\checkpoints\ppo_highway_20260605_110609_step_500.zip
+2026-06-05 11:07:19 | INFO     | utils | Checkpoint saved: C:\Users\Karee\OneDrive\Desktop\RL\checkpoints\ppo_highway_20260605_110609_step_1000.zip
+2026-06-05 11:07:19 | INFO     | __main__ | Run ppo_highway_20260605_110609 complete. Elapsed: 67.2s. Final model: C:\Users\Karee\OneDrive\Desktop\RL\checkpoints\ppo_highway_20260605_110609_step_1000.zip
+2026-06-05 11:08:02 | INFO     | __main__ | Training run started: ppo_highway_20260605_110802
+2026-06-05 11:08:02 | INFO     | utils | Global seed set to 42.
+2026-06-05 11:08:04 | INFO     | utils | Checkpoint saved: C:\Users\Karee\OneDrive\Desktop\RL\checkpoints\ppo_highway_20260605_110802_step_0.zip
+2026-06-05 13:08:30 | INFO     | utils | Checkpoint saved: C:\Users\Karee\OneDrive\Desktop\RL\checkpoints\ppo_highway_20260605_110802_step_100000.zip
+2026-06-05 15:02:46 | INFO     | utils | Checkpoint saved: C:\Users\Karee\OneDrive\Desktop\RL\checkpoints\ppo_highway_20260605_110802_step_200000.zip
+2026-06-05 15:02:46 | INFO     | __main__ | Run ppo_highway_20260605_110802 complete. Elapsed: 14081.8s. Final model: C:\Users\Karee\OneDrive\Desktop\RL\checkpoints\ppo_highway_20260605_110802_step_200000.zip
+2026-06-05 18:45:39 | INFO     | __main__ | Training run started: ppo_highway_20260605_184539
+2026-06-05 18:45:39 | INFO     | utils | Global seed set to 42.
+2026-06-05 18:45:43 | INFO     | utils | Checkpoint saved: C:\Users\Karee\OneDrive\Desktop\RL\checkpoints\ppo_highway_20260605_184539_step_0.zip

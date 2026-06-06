@@ -65,6 +65,16 @@ videos/*.gif
 !videos/.gitkeep
 !assets/.gitkeep
 
+# Keep the verified final submission artifacts
+!checkpoints/ppo_highway_20260605_110802_step_0.zip
+!checkpoints/ppo_highway_20260605_110802_step_100000.zip
+!checkpoints/ppo_highway_20260605_110802_step_200000.zip
+!logs/train.log
+!results/comparison_ppo_highway_20260605_110802.json
+!videos/untrained_agent.mp4
+!videos/half_trained_agent.mp4
+!videos/fully_trained_agent.mp4
+
 # ── Secrets / credentials ─────────────────────────────────────
 .env
 *.pem
