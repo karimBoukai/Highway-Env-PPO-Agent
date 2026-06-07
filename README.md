@@ -183,7 +183,7 @@ Speed reward:
 
 $$
 r_{\mathrm{spd}}(t)=
-\operatorname{clip}\left(
+\text{clip}
 \frac{v(t)-v_{\min}}{v_{\max}-v_{\min}},0,1
 \right).
 $$
