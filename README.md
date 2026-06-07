@@ -37,6 +37,7 @@ Bahçeşehir University (BAU)
 </div>
 
 ---
+
 ## 📋 Table of Contents
 
 1. Project Overview
@@ -601,6 +602,7 @@ These commands can overwrite generated outputs. They were not run during this
 final documentation audit.
 
 ---
+
 ## 🔄 Reproducibility
 
 This project was designed to support reproducible experimentation and transparent evaluation.
@@ -645,7 +647,22 @@ The following items are proposals rather than measured outcomes:
    second edition, MIT Press, 2018.
 
 ---
+## 📊 Key Results Summary
 
+| Metric | Result |
+|----------|----------|
+| Training Timesteps | 200,704 |
+| Final Mean Reward | 7.9673 |
+| Best Mean Reward | 8.9845 |
+| Final Evaluation Return | 11.5362 |
+| Episode Length Improvement | +78.34% |
+| Return Improvement | +126.47% |
+| PPO Parameters | 146,438 |
+| Crash Rate | 100% |
+
+### Main Takeaway
+
+The PPO agent successfully learned behaviours that improved reward accumulation and episode duration. However, collision avoidance remains unsolved, indicating that future work should focus on stronger safety-aware reward shaping and more robust policy learning.
 ## ✅ Conclusion
 
 The submitted run records higher mean return and longer mean episodes at the
