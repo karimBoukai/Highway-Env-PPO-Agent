@@ -40,27 +40,27 @@ Bahçeşehir University (BAU)
 
 ## 📋 Table of Contents
 
-1. Project Overview
-2. Objectives
-3. Environment, States and Actions
-4. Reward Function
-5. PPO Methodology
-6. Training Pipeline
-7. Training Analysis
-8. Evaluation Results
-9. Recorded Media
-10. Challenges and Solutions
-11. Limitations
-12. Repository Structure
-13. Installation and Use
-14. Reproducibility
-15. Future Work
-16. References
-17. Conclusion
+1. [Project Overview 🌟](#project-overview-)
+2. [Objectives 🎯](#objectives-)
+3. [Environment, States and Actions 🌎](#environment-states-and-actions-)
+4. [Reward Function 🎯](#reward-function-)
+5. [PPO Methodology 🧠](#ppo-methodology-)
+6. [Training Pipeline ⚙️](#training-pipeline-️)
+7. [Training Analysis 📈](#training-analysis-)
+8. [Evaluation Results 🏁](#evaluation-results-)
+9. [Recorded Media 🎥](#recorded-media-)
+10. [Challenges and Solutions ⚠️](#challenges-and-solutions-️)
+11. [Limitations 🚧](#limitations-)
+12. [Repository Structure 📁](#repository-structure-)
+13. [Installation and Use 🛠️](#installation-and-use-️)
+14. [Reproducibility 🔄](#reproducibility-)
+15. [Future Work 🔬](#future-work-)
+16. [References 📚](#references-)
+17. [Conclusion ✅](#conclusion-)
 
 ---
 
-## 🌟 Project Overview
+## Project Overview 🌟
 
 This project implements a Proximal Policy Optimization (PPO) agent for the
 `highway-v0` environment. The agent receives a flattened kinematics
@@ -88,7 +88,7 @@ suggestions are labeled separately from measured results.
 
 ---
 
-## 🎯 Objectives
+## Objectives 🎯
 
 - Configure `highway-v0` for a four-lane, 20-vehicle driving task.
 - Train a PPO policy with a custom shaped reward.
@@ -99,7 +99,7 @@ suggestions are labeled separately from measured results.
 
 ---
 
-## 🌎 Environment, States and Actions
+## Environment, States and Actions 🌎
 
 ### Environment Configuration
 
@@ -164,7 +164,7 @@ The configured feature ranges before normalization are:
 
 ---
 
-## 🎯 Reward Function
+##  Reward Function 🎯
 
 The wrapper in `src/reward.py` replaces the native reward with:
 
@@ -247,7 +247,7 @@ presented as separate ablation-study findings.
 
 ---
 
-## 🧠 PPO Methodology
+##  PPO Methodology 🧠
 
 PPO is an on-policy actor-critic algorithm. The policy ratio is
 
@@ -350,7 +350,7 @@ The CSV therefore ends at 200,704 collected timesteps.
 
 ---
 
-## 📈 Training Analysis
+##  Training Analysis 📈
 
 ### Reward
 
@@ -397,7 +397,7 @@ reported separately.
 
 ---
 
-## 🏁 Evaluation Results
+##  Evaluation Results 🏁
 
 ![Checkpoint evaluation comparison](assets/evaluation_comparison.png)
 
@@ -437,7 +437,7 @@ describe these recorded runs only and are not a general safety claim.
 
 ---
 
-## 🎥 Recorded Media
+##  Recorded Media 🎥
 
 The local final artifacts have the following verified properties:
 
@@ -455,7 +455,7 @@ by no-crash status, return, length, and smoothness.
 
 ---
 
-## ⚠️ Challenges and Solutions
+##  Challenges and Solutions ⚠️
 
 ### Two-Dimensional Observation Input
 
@@ -492,7 +492,7 @@ future-work proposals, not completed results.
 
 ---
 
-## 🚧 Limitations
+##  Limitations 🚧
 
 - The evaluation sample contains only five episodes per checkpoint.
 - The recorded crash rate is 100% for every checkpoint.
@@ -509,7 +509,7 @@ future-work proposals, not completed results.
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure 📁
 
 ```text
 RL/
@@ -561,7 +561,7 @@ RL/
 
 ---
 
-## 🛠️ Installation and Use
+##  Installation and Use 🛠️
 
 Python dependencies are listed with minimum versions in `requirements.txt`.
 The source does not pin exact installed package versions.
@@ -607,7 +607,7 @@ final documentation audit.
 
 ---
 
-## 🔄 Reproducibility
+##  Reproducibility 🔄
 
 This project was designed to support reproducible experimentation and transparent evaluation.
 
@@ -626,7 +626,7 @@ These artifacts allow independent verification of the reported results and suppo
 
 ---
 
-## 🔬 Future Work
+##  Future Work 🔬
 
 The following items are proposals rather than measured outcomes:
 
@@ -640,7 +640,7 @@ The following items are proposals rather than measured outcomes:
 
 ---
 
-## 📚 References
+##  References 📚
 
 1. J. Schulman et al., "Proximal Policy Optimization Algorithms,"
    arXiv:1707.06347, 2017.
@@ -654,7 +654,7 @@ The following items are proposals rather than measured outcomes:
    second edition, MIT Press, 2018.
 
 ---
-## 📊 Key Results Summary
+##  Key Results Summary 📊
 
 | Metric | Result |
 |----------|----------|
@@ -670,7 +670,7 @@ The following items are proposals rather than measured outcomes:
 ### Main Takeaway
 
 The PPO agent successfully learned behaviours that improved reward accumulation and episode duration. However, collision avoidance remains unsolved, indicating that future work should focus on stronger safety-aware reward shaping and more robust policy learning.
-## ✅ Conclusion
+##  Conclusion ✅
 
 The submitted run records higher mean return and longer mean episodes at the
 final checkpoint than at the untrained checkpoint. It does not demonstrate
