@@ -57,6 +57,9 @@ Bahçeşehir University (BAU)
 15. Future Work
 16. References
 17. Conclusion
+
+---
+
 ## 🌟 Project Overview
 
 This project implements a Proximal Policy Optimization (PPO) agent for the
@@ -274,6 +277,7 @@ $$
 \qquad
 \delta^V_t=r_t+\gamma V(\mathbf{o}_{t+1})-V(\mathbf{o}_t).
 $$
+
 ### Why PPO?
 
 Proximal Policy Optimization (PPO) was selected because it provides stable policy updates through its clipping mechanism, reducing the risk of destructive policy changes during training. PPO is one of the most widely adopted reinforcement learning algorithms due to its balance between implementation simplicity, learning stability, and strong empirical performance.
@@ -619,6 +623,9 @@ The repository includes:
 - Reproducible evaluation commands.
 
 These artifacts allow independent verification of the reported results and support repeatable reinforcement learning experiments.
+
+---
+
 ## 🔬 Future Work
 
 The following items are proposals rather than measured outcomes:
