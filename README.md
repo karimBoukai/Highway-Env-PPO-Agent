@@ -1,6 +1,15 @@
 <div align="center">
 
 # 🚗 Autonomous Driving with Reinforcement Learning
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![PPO](https://img.shields.io/badge/RL-PPO-green)
+![Stable-Baselines3](https://img.shields.io/badge/SB3-Stable--Baselines3-orange)
+![Highway-Env](https://img.shields.io/badge/Environment-Highway--Env-red)
+![CMP4501](https://img.shields.io/badge/Course-CMP4501-purple)
+
+</p>
 
 ### CMP4501 – Applied Reinforcement Learning
 
