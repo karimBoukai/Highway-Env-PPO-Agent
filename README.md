@@ -1,25 +1,53 @@
-#<div align="center">
+<div align="center">
 
-# Autonomous Driving with Reinforcement Learning
+# 🚗 Autonomous Driving with Reinforcement Learning
 
-### CMP4501 Applied Reinforcement Learning - Project Report
+### CMP4501 – Applied Reinforcement Learning
 
-**Selected Track: Option A - Autonomous Driving with Highway-Env**
+#### Option A – Autonomous Driving using Highway-Env
 
-**Kerim Elmalı - 2282509**<br>
-**Mohammad Siyam - 2267953**<br>
-**Abdalla Hamuda - 2105020**
+---
 
-Department of Software Engineering<br>
+### 👨‍💻 Authors
+
+**Kerim Elmalı – 2282509**  
+**Mohammad Siyam – 2267953**  
+**Abdalla Hamuda – 2105020**
+
+Department of Software Engineering  
 Bahçeşehir University (BAU)
 
-![Agent evolution from untrained to fully trained](assets/evolution.gif)
+---
+
+### 🎬 Agent Evolution
+
+![Agent Evolution](assets/evolution.gif)
+
+*Progression from an untrained policy to the final PPO agent*
 
 </div>
 
 ---
+## 📋 Table of Contents
 
-## 1. Project Overview
+1. Project Overview
+2. Objectives
+3. Environment, States and Actions
+4. Reward Function
+5. PPO Methodology
+6. Training Pipeline
+7. Training Analysis
+8. Evaluation Results
+9. Recorded Media
+10. Challenges and Solutions
+11. Limitations
+12. Repository Structure
+13. Installation and Use
+14. Reproducibility
+15. Future Work
+16. References
+17. Conclusion
+## 🌟 Project Overview
 
 This project implements a Proximal Policy Optimization (PPO) agent for the
 `highway-v0` environment. The agent receives a flattened kinematics
@@ -47,7 +75,7 @@ suggestions are labeled separately from measured results.
 
 ---
 
-## 2. Objectives
+## 🎯 Objectives
 
 - Configure `highway-v0` for a four-lane, 20-vehicle driving task.
 - Train a PPO policy with a custom shaped reward.
@@ -58,7 +86,7 @@ suggestions are labeled separately from measured results.
 
 ---
 
-## 3. Environment, States, and Actions
+## 🌎 Environment, States and Actions
 
 ### Environment Configuration
 
@@ -123,7 +151,7 @@ The configured feature ranges before normalization are:
 
 ---
 
-## 4. Reward Function
+## 🎯 Reward Function
 
 The wrapper in `src/reward.py` replaces the native reward with:
 
@@ -206,7 +234,7 @@ presented as separate ablation-study findings.
 
 ---
 
-## 5. PPO Method
+## 🧠 PPO Methodology
 
 PPO is an on-policy actor-critic algorithm. The policy ratio is
 
@@ -236,6 +264,11 @@ $$
 \qquad
 \delta^V_t=r_t+\gamma V(\mathbf{o}_{t+1})-V(\mathbf{o}_t).
 $$
+### Why PPO?
+
+Proximal Policy Optimization (PPO) was selected because it provides stable policy updates through its clipping mechanism, reducing the risk of destructive policy changes during training. PPO is one of the most widely adopted reinforcement learning algorithms due to its balance between implementation simplicity, learning stability, and strong empirical performance.
+
+For autonomous driving tasks, PPO is particularly suitable because it supports discrete action spaces, integrates directly with Stable-Baselines3, and performs well in sequential decision-making environments where long-term planning is important.
 
 ### Verified Hyperparameters
 
@@ -279,7 +312,7 @@ Loading the final SB3 checkpoint and summing all policy tensors gives exactly
 
 ---
 
-## 6. Training Pipeline
+## ⚙️ Training Pipeline
 
 `src/train.py` performs the following steps:
 
@@ -303,7 +336,7 @@ The CSV therefore ends at 200,704 collected timesteps.
 
 ---
 
-## 7. Training Results
+## 📈 Training Analysis
 
 ### Reward
 
@@ -321,6 +354,14 @@ The CSV therefore ends at 200,704 collected timesteps.
 
 The measured first-to-final change is positive, but the curve fluctuates and
 does not establish a monotonic improvement claim.
+
+### Interpretation of Learning Behaviour
+
+The training results indicate that the PPO agent successfully learned useful driving behaviours during training. The largest improvement occurred during the early stages, where the agent rapidly learned to maintain speed and interact more effectively with surrounding traffic.
+
+A reward peak was observed around 40,000 timesteps, suggesting that the agent discovered a particularly effective policy during this phase. Beyond this point, learning entered a stabilization stage where rewards fluctuated around a higher average value. Such fluctuations are expected in reinforcement learning because PPO continuously balances exploration and exploitation while interacting with stochastic traffic scenarios.
+
+Although the final checkpoint achieved higher rewards than the initial policy, the reward curve suggests that additional training or reward redesign may further improve convergence and policy quality.
 
 ### Episode Length
 
@@ -342,7 +383,7 @@ reported separately.
 
 ---
 
-## 8. Evaluation Results
+## 🏁 Evaluation Results
 
 ![Checkpoint evaluation comparison](assets/evaluation_comparison.png)
 
@@ -354,6 +395,14 @@ contains five episodes per checkpoint and uses the custom shaped reward.
 | Untrained | 5.0940 | 1.5725 | 100% | 24.8834 m/s | 31.4 |
 | Midpoint | 10.0419 | 3.8039 | 100% | 29.6224 m/s | 26.8 |
 | Final | 11.5362 | 4.3138 | 100% | 24.9148 m/s | 56.0 |
+
+### Evaluation Discussion
+
+The evaluation results demonstrate a clear improvement throughout training. Mean episode return increased substantially between the untrained and final checkpoints, indicating that the learned policy became more effective at maximizing the designed reward function.
+
+Episode length also increased significantly, suggesting that the agent survived longer and maintained successful driving behaviour for extended periods. However, collision avoidance remains the primary unresolved challenge. Despite improvements in reward and episode duration, every evaluation episode still ended in a collision.
+
+These findings suggest that the current reward function successfully encourages speed and lane management but may require stronger safety-oriented signals to achieve robust collision avoidance.
 
 Using the unrounded JSON values:
 
@@ -374,7 +423,7 @@ describe these recorded runs only and are not a general safety claim.
 
 ---
 
-## 9. Recorded Media
+## 🎥 Recorded Media
 
 The local final artifacts have the following verified properties:
 
@@ -392,7 +441,7 @@ by no-crash status, return, length, and smoothness.
 
 ---
 
-## 10. Challenges and Solutions
+## ⚠️ Challenges and Solutions
 
 ### Two-Dimensional Observation Input
 
@@ -429,7 +478,7 @@ future-work proposals, not completed results.
 
 ---
 
-## 11. Limitations
+## 🚧 Limitations
 
 - The evaluation sample contains only five episodes per checkpoint.
 - The recorded crash rate is 100% for every checkpoint.
@@ -446,7 +495,7 @@ future-work proposals, not completed results.
 
 ---
 
-## 12. Repository Structure
+## 📁 Repository Structure
 
 ```text
 RL/
@@ -498,7 +547,7 @@ RL/
 
 ---
 
-## 13. Installation and Use
+## 🛠️ Installation and Use
 
 Python dependencies are listed with minimum versions in `requirements.txt`.
 The source does not pin exact installed package versions.
@@ -543,8 +592,23 @@ These commands can overwrite generated outputs. They were not run during this
 final documentation audit.
 
 ---
+## 🔄 Reproducibility
 
-## 14. Future Work
+This project was designed to support reproducible experimentation and transparent evaluation.
+
+The repository includes:
+
+- Fixed random seed configuration.
+- Fully documented hyperparameters.
+- Saved training checkpoints.
+- Logged training metrics.
+- Stored evaluation results.
+- Version-controlled source code.
+- Reproducible training commands.
+- Reproducible evaluation commands.
+
+These artifacts allow independent verification of the reported results and support repeatable reinforcement learning experiments.
+## 🔬 Future Work
 
 The following items are proposals rather than measured outcomes:
 
@@ -558,7 +622,7 @@ The following items are proposals rather than measured outcomes:
 
 ---
 
-## 15. References
+## 📚 References
 
 1. J. Schulman et al., "Proximal Policy Optimization Algorithms,"
    arXiv:1707.06347, 2017.
@@ -573,7 +637,7 @@ The following items are proposals rather than measured outcomes:
 
 ---
 
-## 16. Conclusion
+## ✅ Conclusion
 
 The submitted run records higher mean return and longer mean episodes at the
 final checkpoint than at the untrained checkpoint. It does not demonstrate
