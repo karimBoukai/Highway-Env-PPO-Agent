@@ -40,24 +40,25 @@ Bahçeşehir University (BAU)
 
 ## 📋 Table of Contents
 
-1. Project Overview 🌟
-2. Objectives 🎯
-3. Environment, States and Actions 🌎
-4. Reward Function 🎯
-5. PPO Methodology 🧠
-6. Training Pipeline ⚙️
-7. Training Analysis 📈
-8. Evaluation Results 🏁
-9. Recorded Media 🎥
-10. Challenges and Solutions ⚠️
-11. Limitations 🚧
-12. Repository Structure 📁
-13. Installation and Use 🛠️
-14. Reproducibility 🔄
-15. Future Work 🔬
-16. References 📚
-17. Key Results Summary 📊
-18. Conclusion ✅
+1. [Project Overview 🌟](#project-overview-)
+2. [Objectives 🎯](#objectives-)
+3. [Environment, States and Actions 🌎](#environment-states-and-actions-)
+4. [Reward Function 🎯](#reward-function-)
+5. [PPO Methodology 🧠](#ppo-methodology-)
+6. [Training Pipeline ⚙️](#training-pipeline-)
+7. [Training Analysis 📈](#training-analysis-)
+8. [Evaluation Results 🏁](#evaluation-results-)
+9. [Recorded Media 🎥](#recorded-media-)
+10. [Challenges and Solutions ⚠️](#challenges-and-solutions-)
+11. [Limitations 🚧](#limitations-)
+12. [Repository Structure 📁](#repository-structure-)
+13. [Installation and Use 🛠️](#installation-and-use-)
+14. [Reproducibility 🔄](#reproducibility-)
+15. [Future Work 🔬](#future-work-)
+16. [References 📚](#references-)
+17. [Key Results Summary 📊](#key-results-summary-)
+18. [Conclusion ✅](#conclusion-)
+
 ---
 
 ## Project Overview 🌟
