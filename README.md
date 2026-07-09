@@ -684,7 +684,7 @@ learning-progress claim, while its safety limitation remains explicit.
 <div align="center">
 
 *CMP4501 Applied Reinforcement Learning*<br>
-*Department of Software Engineering - Bahçeşehir University (BAU)*<br>
-*Kerim Elmalı - 2282509 | Mohammad Siyam - 2267953 | Abdalla Hamuda - 2105020*
+*Department of Software Engineering - Bahçeşehir University *<br>
+*Kerim Elmalı
 
 </div>
