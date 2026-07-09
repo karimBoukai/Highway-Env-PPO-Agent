@@ -19,12 +19,9 @@
 
 ### 👨‍💻 Authors
 
-**Kerim Elmalı – 2282509**  
-**Mohammad Siyam – 2267953**  
-**Abdalla Hamuda – 2105020**
+**Kerim Elmalı**  
 
 Department of Software Engineering  
-Bahçeşehir University (BAU)
 
 ---
 
